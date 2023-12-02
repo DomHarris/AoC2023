@@ -20,7 +20,6 @@ public class DayTwo : IAoCMethod
         var sw = Stopwatch.StartNew();
         int sum = 0;
 
-        List<int> failedGames = new();
         List<int> possibleGames = new();
         
         int gameIdx = 1;
@@ -56,28 +55,19 @@ public class DayTwo : IAoCMethod
                             case 'r':
                                 charIdx += 3;
                                 if (num > _red)
-                                {
-                                    failedGames.Add(gameIdx);
                                     goto nextGame;
-                                }
 
                                 break;
                             case 'g':
                                 charIdx += 5;
                                 if (num > _green)
-                                {
-                                    failedGames.Add(gameIdx);
                                     goto nextGame;
-                                }
 
                                 break;
                             case 'b':
                                 charIdx += 4;
                                 if (num > _blue)
-                                {
-                                    failedGames.Add(gameIdx);
                                     goto nextGame;
-                                }
 
                                 break;
                         }
