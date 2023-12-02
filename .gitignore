@@ -1,0 +1,5 @@
+AoC2023/bin/**
+AoC2023/obj/**
+*.csproj
+*.sln
+.idea/**
